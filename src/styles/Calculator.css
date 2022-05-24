@@ -1,0 +1,49 @@
+.container {
+  margin: 50px 200px;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.calculator {
+  min-width: 300px;
+}
+.display-area {
+  padding: 10px;
+}
+
+.keys-area {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #d3eafe;
+  padding: 10px;
+}
+.key-container:hover {
+  background-color: #b5cadc;
+  text-align: center;
+  cursor: pointer;
+}
+.hitory {
+  min-width: 200px;
+}
+.history-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.history-item:hover {
+  text-align: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: 50px 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 50px 50px;
+  }
+  .hitory {
+    min-width: 100px;
+  }
+}
